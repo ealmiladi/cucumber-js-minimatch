@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/ealimadi/.nvm/versions/node/v14.18.1/bin/node /usr/local/Cellar/yarn/1.22.17/libexec/bin/yarn.js
+
+PATH: 
+  /Users/ealimadi/.nvm/versions/node/v14.18.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ealimadi/untitled/node_modules/.bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ealimadi/untitled/package.json: Unexpected token } in JSON at position 217
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "cucumber-runner",
+    "version": "0.0.1",
+    "description": "CLI Tool for various Oranj Developer Needs",
+    "main": "bin/main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+    },
+    "bin": {
+      "oranj": "./bin/main.js"
+    },
+    "preferGlobal": true,
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@cucumber/cucumber": "^7.0.0"
+    },
+    "publishConfig": {
+      "registry": "http://nexus.oranjsites.com/repository/oranj-s3-npm/"
+    },
+    "resolutions": {
+      "colors": "1.4.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

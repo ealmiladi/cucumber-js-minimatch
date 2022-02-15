@@ -1,0 +1,15 @@
+{
+  "name": "cucumber-runner",
+  "version": "0.0.1",
+  "description": "reproduce",
+  "scripts": {
+    "test": "cucumber-js feature/*.feature -r steps",
+    "test-fork": "node runner.js"
+  },
+  "preferGlobal": true,
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.0.0"
+  }
+}
